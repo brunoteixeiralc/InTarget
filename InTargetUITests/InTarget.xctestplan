@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "D3BA1074-B9C8-4DF3-9743-4C319378247D",
+      "name" : "English",
+      "options" : {
+        "language" : "en"
+      }
+    },
+    {
+      "id" : "D0982D7F-2E34-4786-A907-7B8BED1D456C",
+      "name" : "Portuguese",
+      "options" : {
+        "language" : "pt-BR"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "areLocalizationScreenshotsEnabled" : true,
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:InTarget.xcodeproj",
+      "identifier" : "F49E5FEC2673FF86007DEEA8",
+      "name" : "InTarget"
+    },
+    "uiTestingScreenshotsLifetime" : "keepAlways"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:InTarget.xcodeproj",
+        "identifier" : "F49E600D2673FF87007DEEA8",
+        "name" : "InTargetUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

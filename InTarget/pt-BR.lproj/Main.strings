@@ -1,0 +1,38 @@
+
+/* Class = "UILabel"; text = "100"; ObjectID = "05x-6C-by3"; */
+"05x-6C-by3.text" = "100";
+
+/* Class = "UILabel"; text = " About me 🧑🏻‍💻"; ObjectID = "3cq-aX-WbU"; */
+"3cq-aX-WbU.text" = " Sobre mim 🧑🏻‍💻";
+
+/* Class = "UILabel"; text = "Put the Bull's Eye as close as you can to:"; ObjectID = "9Rj-vf-y0x"; */
+"9Rj-vf-y0x.text" = "Coloque o alvo no mais perto de:";
+
+/* Class = "UITextView"; text = "*** Bull’s Eye ***\n\nWelcome to the awesome game of Bull’s Eye where you can win points and fame by dragging a slider.\n\nYour goal is to place the slider as close as possible to the target value. The closer you are, the more points you score. Enjoy! "; ObjectID = "FdT-w3-cEA"; */
+"FdT-w3-cEA.text" = "*** No Alvo ***\n\nBem-vindo ao incrível jogo do No Alvo, onde você pode ganhar pontos e fama arrastando um controle deslizante.\n\nSeu objetivo é colocar o controle deslizante o mais próximo possível do valor alvo. Quanto mais perto você estiver, mais pontos você marca. Apreciar! ";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "GrV-r8-IC3"; */
+"GrV-r8-IC3.text" = "100";
+
+/* Class = "UILabel"; text = "Score:"; ObjectID = "Ino-WZ-fRV"; */
+"Ino-WZ-fRV.text" = "Pontuação:";
+
+/* Class = "UIButton"; normalTitle = "Hit Me!"; ObjectID = "Yud-9X-UMO"; */
+"Yud-9X-UMO.normalTitle" = "Verificar!";
+
+/* Class = "UIButton"; normalTitle = "Close"; ObjectID = "ie3-AR-G8i"; */
+"ie3-AR-G8i.normalTitle" = "Fechar";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "j4G-go-Xym"; */
+"j4G-go-Xym.text" = "0";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "vaC-VF-4Qj"; */
+"vaC-VF-4Qj.text" = "0";
+
+/* Class = "UILabel"; text = "Round:"; ObjectID = "waO-zD-cgQ"; */
+"waO-zD-cgQ.text" = "Rodada:";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "yrv-1o-btO"; */
+"yrv-1o-btO.text" = "1";
+
+"MVv-1X-J7s.normalTitle" = "Fechar";
