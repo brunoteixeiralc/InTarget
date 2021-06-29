@@ -114,6 +114,7 @@ class MainViewController: UIViewController {
             if let rankVC = segue.destination as? RankViewController{
                 rankVC.rankListModel = rankListModelOrdered
                 rankVC.scoreRef = scoreRef
+                rankVC.uuid = uuid
             }
         }
     }

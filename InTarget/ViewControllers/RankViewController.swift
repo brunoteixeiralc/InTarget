@@ -14,6 +14,7 @@ class RankViewController: UIViewController {
     
     var scoreRef: DatabaseReference!
     var rankListModel:RankListModel?
+    var uuid:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +60,11 @@ extension RankViewController: UITableViewDelegate,UITableViewDataSource{
     }
     
     func configureCell(cell:RankTableViewCell, with item:RankModel){
-        cell.name.text = item.uuid
+        if (uuid == item.uuid){
+            cell.name.text =  "\(NSLocalizedString("You!", comment: "You!")) 😀 🎯"
+        }else{
+            cell.name.text = item.uuid
+        }
         cell.score.text = String(item.score)
     }
     
