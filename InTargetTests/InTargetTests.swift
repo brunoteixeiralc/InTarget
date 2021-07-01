@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import NoAlvo
+@testable import InTarget
 
 class InTargetTests: XCTestCase {
 

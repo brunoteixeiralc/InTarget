@@ -73,6 +73,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yud-9X-UMO">
                                 <rect key="frame" x="293" y="165.5" width="81" height="44"/>
+                                <accessibility key="accessibilityConfiguration" label="hitMe_btn"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="26"/>
                                 <state key="normal" title="Hit Me!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -86,6 +87,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5r-O7-epF">
                                         <rect key="frame" x="0.0" y="1.5" width="25" height="24.5"/>
+                                        <accessibility key="accessibilityConfiguration" label="startOver_btn"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="arrow.uturn.backward.circle.fill" catalog="system">
@@ -140,9 +142,13 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tny-aq-r1X">
                                         <rect key="frame" x="602" y="1.5" width="25" height="25"/>
+                                        <accessibility key="accessibilityConfiguration" label="account_btn">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="person.crop.circle.fill" catalog="system">
+                                        <state key="normal">
+                                            <imageReference key="image" image="person.crop.circle.fill" catalog="system"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                         </state>
                                         <connections>
@@ -154,6 +160,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5n-pW-TEf">
                                 <rect key="frame" x="621" y="20" width="26" height="28"/>
+                                <accessibility key="accessibilityConfiguration" label="ranking_btn"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="0t6-SW-nmn"/>
                                     <constraint firstAttribute="height" constant="28" id="zFh-v2-h54"/>
@@ -235,6 +242,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ie3-AR-G8i">
                                 <rect key="frame" x="308.5" y="319" width="50" height="36"/>
+                                <accessibility key="accessibilityConfiguration" label="close_btn"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Close">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -252,6 +260,7 @@
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" About me 🧑🏻‍💻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cq-aX-WbU">
                                 <rect key="frame" x="20" y="325" width="120" height="24"/>
+                                <accessibility key="accessibilityConfiguration" label="about_btn"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
@@ -300,6 +309,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVv-1X-J7s">
                                 <rect key="frame" x="308.5" y="319" width="50" height="36"/>
+                                <accessibility key="accessibilityConfiguration" label="close_btn"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Close">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
