@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>bundleID</key>
+		<string>br.com.bruno.InTarget</string>
+		<key>bundlePath</key>
+		<string>/Users/brunolemgruber/Library/Developer/CoreSimulator/Devices/87ECBCF3-7187-4632-B367-DAFE3468B240/data/Containers/Bundle/Application/72BD6955-F57C-4347-BA4D-6CE6CEDE606B/InTarget.app</string>
+		<key>screenshots</key>
+		<array>
+			<dict>
+				<key>frame</key>
+				<string>{{259, 21.5}, {345, 25}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-1.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{259, 21.5}, {345, 25}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-5.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{259, 21.5}, {345, 25}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-7.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{259, 21.5}, {345, 25}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-9.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{259, 21.5}, {345, 25}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-10.jpeg</string>
+			</dict>
+		</array>
+		<key>stringKey</key>
+		<string>9Rj-vf-y0x.text</string>
+		<key>tableName</key>
+		<string>Main</string>
+	</dict>
+	<dict>
+		<key>bundleID</key>
+		<string>br.com.bruno.InTarget</string>
+		<key>bundlePath</key>
+		<string>/Users/brunolemgruber/Library/Developer/CoreSimulator/Devices/87ECBCF3-7187-4632-B367-DAFE3468B240/data/Containers/Bundle/Application/72BD6955-F57C-4347-BA4D-6CE6CEDE606B/InTarget.app</string>
+		<key>screenshots</key>
+		<array>
+			<dict>
+				<key>frame</key>
+				<string>{{64, 134}, {10.5, 31}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-1.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{604, 345.5}, {10.5, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-1.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{64, 134}, {10.5, 31}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-5.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{604, 345.5}, {10.5, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-5.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{64, 134}, {10.5, 31}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-7.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{604, 345.5}, {10.5, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-7.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{64, 134}, {10.5, 31}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-9.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{64, 134}, {10.5, 31}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-10.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{604, 345.5}, {10.5, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-10.jpeg</string>
+			</dict>
+		</array>
+		<key>stringKey</key>
+		<string>yrv-1o-btO.text</string>
+		<key>tableName</key>
+		<string>Main</string>
+	</dict>
+	<dict>
+		<key>bundleID</key>
+		<string>br.com.bruno.InTarget</string>
+		<key>bundlePath</key>
+		<string>/Users/brunolemgruber/Library/Developer/CoreSimulator/Devices/87ECBCF3-7187-4632-B367-DAFE3468B240/data/Containers/Bundle/Application/72BD6955-F57C-4347-BA4D-6CE6CEDE606B/InTarget.app</string>
+		<key>screenshots</key>
+		<array>
+			<dict>
+				<key>frame</key>
+				<string>{{793.5, 134}, {38.5, 31}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-1.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{793.5, 134}, {38.5, 31}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-5.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{793.5, 134}, {38.5, 31}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-7.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{793.5, 134}, {38.5, 31}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-9.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{793.5, 134}, {38.5, 31}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-10.jpeg</string>
+			</dict>
+		</array>
+		<key>stringKey</key>
+		<string>05x-6C-by3.text</string>
+		<key>tableName</key>
+		<string>Main</string>
+	</dict>
+	<dict>
+		<key>bundleID</key>
+		<string>br.com.bruno.InTarget</string>
+		<key>bundlePath</key>
+		<string>/Users/brunolemgruber/Library/Developer/CoreSimulator/Devices/87ECBCF3-7187-4632-B367-DAFE3468B240/data/Containers/Bundle/Application/72BD6955-F57C-4347-BA4D-6CE6CEDE606B/InTarget.app</string>
+		<key>screenshots</key>
+		<array>
+			<dict>
+				<key>frame</key>
+				<string>{{407.5, 191}, {81, 32}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-1.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{407.5, 191}, {81, 32}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-5.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{407.5, 191}, {81, 32}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-7.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{407.5, 191}, {81, 32}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-9.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{407.5, 191}, {81, 32}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-10.jpeg</string>
+			</dict>
+		</array>
+		<key>stringKey</key>
+		<string>Yud-9X-UMO.normalTitle</string>
+		<key>tableName</key>
+		<string>Main</string>
+	</dict>
+	<dict>
+		<key>bundleID</key>
+		<string>br.com.bruno.InTarget</string>
+		<key>bundlePath</key>
+		<string>/Users/brunolemgruber/Library/Developer/CoreSimulator/Devices/87ECBCF3-7187-4632-B367-DAFE3468B240/data/Containers/Bundle/Application/72BD6955-F57C-4347-BA4D-6CE6CEDE606B/InTarget.app</string>
+		<key>screenshots</key>
+		<array>
+			<dict>
+				<key>frame</key>
+				<string>{{281.5, 345.5}, {56, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-1.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{281.5, 345.5}, {56, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-5.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{281.5, 345.5}, {56, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-7.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{272, 345.5}, {56, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-9.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{281.5, 345.5}, {56, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-10.jpeg</string>
+			</dict>
+		</array>
+		<key>stringKey</key>
+		<string>Ino-WZ-fRV.text</string>
+		<key>tableName</key>
+		<string>Main</string>
+	</dict>
+	<dict>
+		<key>bundleID</key>
+		<string>br.com.bruno.InTarget</string>
+		<key>bundlePath</key>
+		<string>/Users/brunolemgruber/Library/Developer/CoreSimulator/Devices/87ECBCF3-7187-4632-B367-DAFE3468B240/data/Containers/Bundle/Application/72BD6955-F57C-4347-BA4D-6CE6CEDE606B/InTarget.app</string>
+		<key>screenshots</key>
+		<array>
+			<dict>
+				<key>frame</key>
+				<string>{{338.5, 345.5}, {14.5, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-1.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{338.5, 345.5}, {14.5, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-5.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{338.5, 345.5}, {14.5, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-7.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{338.5, 345.5}, {14.5, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-10.jpeg</string>
+			</dict>
+		</array>
+		<key>stringKey</key>
+		<string>vaC-VF-4Qj.text</string>
+		<key>tableName</key>
+		<string>Main</string>
+	</dict>
+	<dict>
+		<key>bundleID</key>
+		<string>br.com.bruno.InTarget</string>
+		<key>bundlePath</key>
+		<string>/Users/brunolemgruber/Library/Developer/CoreSimulator/Devices/87ECBCF3-7187-4632-B367-DAFE3468B240/data/Containers/Bundle/Application/72BD6955-F57C-4347-BA4D-6CE6CEDE606B/InTarget.app</string>
+		<key>screenshots</key>
+		<array>
+			<dict>
+				<key>frame</key>
+				<string>{{541, 345.5}, {62, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-1.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{541, 345.5}, {62, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-5.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{541, 345.5}, {62, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-7.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{547.5, 345.5}, {62, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-9.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{541, 345.5}, {62, 27.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-10.jpeg</string>
+			</dict>
+		</array>
+		<key>stringKey</key>
+		<string>waO-zD-cgQ.text</string>
+		<key>tableName</key>
+		<string>Main</string>
+	</dict>
+	<dict>
+		<key>bundleID</key>
+		<string>br.com.bruno.InTarget</string>
+		<key>bundlePath</key>
+		<string>/Users/brunolemgruber/Library/Developer/CoreSimulator/Devices/87ECBCF3-7187-4632-B367-DAFE3468B240/data/Containers/Bundle/Application/72BD6955-F57C-4347-BA4D-6CE6CEDE606B/InTarget.app</string>
+		<key>screenshots</key>
+		<array>
+			<dict>
+				<key>frame</key>
+				<string>{{68, 343}, {120, 24}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-2.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{68, 343}, {120, 24}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-3.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{68, 343}, {120, 24}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-4.jpeg</string>
+			</dict>
+		</array>
+		<key>stringKey</key>
+		<string>3cq-aX-WbU.text</string>
+		<key>tableName</key>
+		<string>Main</string>
+	</dict>
+	<dict>
+		<key>bundleID</key>
+		<string>br.com.bruno.InTarget</string>
+		<key>bundlePath</key>
+		<string>/Users/brunolemgruber/Library/Developer/CoreSimulator/Devices/87ECBCF3-7187-4632-B367-DAFE3468B240/data/Containers/Bundle/Application/72BD6955-F57C-4347-BA4D-6CE6CEDE606B/InTarget.app</string>
+		<key>screenshots</key>
+		<array>
+			<dict>
+				<key>frame</key>
+				<string>{{423, 343}, {50, 24}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-2.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{423, 343}, {50, 24}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-3.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{423, 343}, {50, 24}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-4.jpeg</string>
+			</dict>
+		</array>
+		<key>stringKey</key>
+		<string>ie3-AR-G8i.normalTitle</string>
+		<key>tableName</key>
+		<string>Main</string>
+	</dict>
+	<dict>
+		<key>bundleID</key>
+		<string>com.apple.WebCore</string>
+		<key>bundlePath</key>
+		<string>/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/WebCore.framework</string>
+		<key>screenshots</key>
+		<array>
+			<dict>
+				<key>frame</key>
+				<string>{{68, 20}, {346, 309}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-4.jpeg</string>
+			</dict>
+		</array>
+		<key>stringKey</key>
+		<string>banner</string>
+		<key>tableName</key>
+		<string>Localizable</string>
+	</dict>
+	<dict>
+		<key>bundleID</key>
+		<string>br.com.bruno.InTarget</string>
+		<key>bundlePath</key>
+		<string>/Users/brunolemgruber/Library/Developer/CoreSimulator/Devices/87ECBCF3-7187-4632-B367-DAFE3468B240/data/Containers/Bundle/Application/72BD6955-F57C-4347-BA4D-6CE6CEDE606B/InTarget.app</string>
+		<key>screenshots</key>
+		<array>
+			<dict>
+				<key>frame</key>
+				<string>{{423, 343}, {50, 24}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-6.jpeg</string>
+			</dict>
+		</array>
+		<key>stringKey</key>
+		<string>MVv-1X-J7s.normalTitle</string>
+		<key>tableName</key>
+		<string>Main</string>
+	</dict>
+	<dict>
+		<key>bundleID</key>
+		<string>br.com.bruno.InTarget</string>
+		<key>bundlePath</key>
+		<string>/Users/brunolemgruber/Library/Developer/CoreSimulator/Devices/87ECBCF3-7187-4632-B367-DAFE3468B240/data/Containers/Bundle/Application/72BD6955-F57C-4347-BA4D-6CE6CEDE606B/InTarget.app</string>
+		<key>screenshots</key>
+		<array>
+			<dict>
+				<key>frame</key>
+				<string>{{329, 154.5}, {238, 20.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-8.jpeg</string>
+			</dict>
+			<dict>
+				<key>frame</key>
+				<string>{{313, 134.5}, {270, 124.5}}</string>
+				<key>name</key>
+				<string>InTargetUITests-iPhone 11-en-8.jpeg</string>
+			</dict>
+		</array>
+		<key>stringKey</key>
+		<string>Pretty good!</string>
+		<key>tableName</key>
+		<string>Localizable</string>
+	</dict>
+</array>
+</plist>

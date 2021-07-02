@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="InTarget/Base.lproj/Main.storyboard" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5155e"/>
+    </header>
+    <body>
+      <trans-unit id="3cq-aX-WbU.accessibilityLabel" xml:space="preserve">
+        <source>about_btn</source>
+        <target>about_btn</target>
+        <note>Class = "UILabel"; accessibilityLabel = "about_btn"; ObjectID = "3cq-aX-WbU";</note>
+      </trans-unit>
+      <trans-unit id="3cq-aX-WbU.text" xml:space="preserve">
+        <source> About me 🧑🏻‍💻</source>
+        <target> About me 🧑🏻‍💻</target>
+        <note>Class = "UILabel"; text = " About me 🧑🏻‍💻"; ObjectID = "3cq-aX-WbU";</note>
+      </trans-unit>
+      <trans-unit id="05x-6C-by3.text" xml:space="preserve">
+        <source>100</source>
+        <target>100</target>
+        <note>Class = "UILabel"; text = "100"; ObjectID = "05x-6C-by3";</note>
+      </trans-unit>
+      <trans-unit id="7db-Qc-2VW.text" xml:space="preserve">
+        <source>Nome</source>
+        <target>Nome</target>
+        <note>Class = "UILabel"; text = "Nome"; ObjectID = "7db-Qc-2VW";</note>
+      </trans-unit>
+      <trans-unit id="9Rj-vf-y0x.text" xml:space="preserve">
+        <source>Put the In Target as close as you can to:</source>
+        <target>Put the In Target as close as you can to:</target>
+        <note>Class = "UILabel"; text = "Put the In Target as close as you can to:"; ObjectID = "9Rj-vf-y0x";</note>
+      </trans-unit>
+      <trans-unit id="FdT-w3-cEA.text" xml:space="preserve">
+        <source>-</source>
+        <target>*** In Target ***
+
+Welcome to the awesome game of In Target where you can win points and fame by dragging a slider.
+
+Your goal is to place the slider as close as possible to the target value. The closer you are, the more points you score. Enjoy! </target>
+        <note>Class = "UITextView"; text = "-"; ObjectID = "FdT-w3-cEA";</note>
+      </trans-unit>
+      <trans-unit id="GrV-r8-IC3.text" xml:space="preserve">
+        <source>100</source>
+        <target>100</target>
+        <note>Class = "UILabel"; text = "100"; ObjectID = "GrV-r8-IC3";</note>
+      </trans-unit>
+      <trans-unit id="Ino-WZ-fRV.text" xml:space="preserve">
+        <source>Score:</source>
+        <target>Score:</target>
+        <note>Class = "UILabel"; text = "Score:"; ObjectID = "Ino-WZ-fRV";</note>
+      </trans-unit>
+      <trans-unit id="MVv-1X-J7s.accessibilityLabel" xml:space="preserve">
+        <source>close_btn</source>
+        <target>close_btn</target>
+        <note>Class = "UIButton"; accessibilityLabel = "close_btn"; ObjectID = "MVv-1X-J7s";</note>
+      </trans-unit>
+      <trans-unit id="MVv-1X-J7s.normalTitle" xml:space="preserve">
+        <source>Close</source>
+        <target>Close</target>
+        <note>Class = "UIButton"; normalTitle = "Close"; ObjectID = "MVv-1X-J7s";</note>
+      </trans-unit>
+      <trans-unit id="Q8J-l2-8gK.text" xml:space="preserve">
+        <source>Score</source>
+        <target>Score</target>
+        <note>Class = "UILabel"; text = "Score"; ObjectID = "Q8J-l2-8gK";</note>
+      </trans-unit>
+      <trans-unit id="T5n-pW-TEf.accessibilityLabel" xml:space="preserve">
+        <source>ranking_btn</source>
+        <target>ranking_btn</target>
+        <note>Class = "UIButton"; accessibilityLabel = "ranking_btn"; ObjectID = "T5n-pW-TEf";</note>
+      </trans-unit>
+      <trans-unit id="Y5r-O7-epF.accessibilityLabel" xml:space="preserve">
+        <source>startOver_btn</source>
+        <target>startOver_btn</target>
+        <note>Class = "UIButton"; accessibilityLabel = "startOver_btn"; ObjectID = "Y5r-O7-epF";</note>
+      </trans-unit>
+      <trans-unit id="Yud-9X-UMO.accessibilityLabel" xml:space="preserve">
+        <source>hitMe_btn</source>
+        <target>hitMe_btn</target>
+        <note>Class = "UIButton"; accessibilityLabel = "hitMe_btn"; ObjectID = "Yud-9X-UMO";</note>
+      </trans-unit>
+      <trans-unit id="Yud-9X-UMO.normalTitle" xml:space="preserve">
+        <source>Hit Me!</source>
+        <target>Hit Me!</target>
+        <note>Class = "UIButton"; normalTitle = "Hit Me!"; ObjectID = "Yud-9X-UMO";</note>
+      </trans-unit>
+      <trans-unit id="ie3-AR-G8i.accessibilityLabel" xml:space="preserve">
+        <source>close_btn</source>
+        <target>close_btn</target>
+        <note>Class = "UIButton"; accessibilityLabel = "close_btn"; ObjectID = "ie3-AR-G8i";</note>
+      </trans-unit>
+      <trans-unit id="ie3-AR-G8i.normalTitle" xml:space="preserve">
+        <source>Close</source>
+        <target>Close</target>
+        <note>Class = "UIButton"; normalTitle = "Close"; ObjectID = "ie3-AR-G8i";</note>
+      </trans-unit>
+      <trans-unit id="j4G-go-Xym.text" xml:space="preserve">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "j4G-go-Xym";</note>
+      </trans-unit>
+      <trans-unit id="tny-aq-r1X.accessibilityLabel" xml:space="preserve">
+        <source>account_btn</source>
+        <target>account_btn</target>
+        <note>Class = "UIButton"; accessibilityLabel = "account_btn"; ObjectID = "tny-aq-r1X";</note>
+      </trans-unit>
+      <trans-unit id="vaC-VF-4Qj.text" xml:space="preserve">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "vaC-VF-4Qj";</note>
+      </trans-unit>
+      <trans-unit id="waO-zD-cgQ.text" xml:space="preserve">
+        <source>Round:</source>
+        <target>Round:</target>
+        <note>Class = "UILabel"; text = "Round:"; ObjectID = "waO-zD-cgQ";</note>
+      </trans-unit>
+      <trans-unit id="yrv-1o-btO.text" xml:space="preserve">
+        <source>1</source>
+        <target>1</target>
+        <note>Class = "UILabel"; text = "1"; ObjectID = "yrv-1o-btO";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="InTarget/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5155e"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>In Target</source>
+        <target>In Target</target>
+        <note>/Needs to change the language of simulator to test</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>No Alvo!</source>
+        <target>No Alvo!</target>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="InTarget/en.lproj/Localizable.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A5155e"/>
+    </header>
+    <body>
+      <trans-unit id="*** Bull’s Eye ***&#10;Welcome to the awesome game of Bull’s Eye where you can win points and fame by dragging a slider.&#10;Your goal is to place the slider as close as possible to the target value. The closer you are, the more points you score. Enjoy!" xml:space="preserve">
+        <source>*** Bull’s Eye ***
+
+Welcome to the awesome game of Bull’s Eye where you can win points and fame by dragging a slider.
+
+Your goal is to place the slider as close as possible to the target value. The closer you are, the more points you score. Enjoy!</source>
+        <target>*** Bull’s Eye ***
+
+Welcome to the awesome game of Bull’s Eye where you can win points and fame by dragging a slider.
+
+Your goal is to place the slider as close as possible to the target value. The closer you are, the more points you score. Enjoy!</target>
+        <note>About the app</note>
+      </trans-unit>
+      <trans-unit id="Not even close..." xml:space="preserve">
+        <source>Not even close...</source>
+        <target>Not even close...</target>
+        <note>Not even close...</note>
+      </trans-unit>
+      <trans-unit id="Perfect!" xml:space="preserve">
+        <source>Perfect!</source>
+        <target>Perfect!</target>
+        <note>Perfect!</note>
+      </trans-unit>
+      <trans-unit id="Pretty good!" xml:space="preserve">
+        <source>Pretty good!</source>
+        <target>Pretty good!</target>
+        <note>Pretty good!</note>
+      </trans-unit>
+      <trans-unit id="You almost had it!" xml:space="preserve">
+        <source>You almost had it!</source>
+        <target>You almost had it!</target>
+        <note>You almost had it!</note>
+      </trans-unit>
+      <trans-unit id="You scored" xml:space="preserve">
+        <source>You scored</source>
+        <target>You scored</target>
+        <note>You scored</note>
+      </trans-unit>
+      <trans-unit id="You!" xml:space="preserve">
+        <source>You!</source>
+        <target>You!</target>
+        <note>You</note>
+      </trans-unit>
+      <trans-unit id="points" xml:space="preserve">
+        <source>points</source>
+        <target>points</target>
+        <note>points</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

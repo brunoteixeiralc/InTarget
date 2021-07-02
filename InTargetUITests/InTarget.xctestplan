@@ -4,14 +4,16 @@
       "id" : "D3BA1074-B9C8-4DF3-9743-4C319378247D",
       "name" : "English",
       "options" : {
-        "language" : "en"
+        "language" : "en",
+        "region" : "US"
       }
     },
     {
       "id" : "D0982D7F-2E34-4786-A907-7B8BED1D456C",
       "name" : "Portuguese",
       "options" : {
-        "language" : "pt-BR"
+        "language" : "pt-BR",
+        "region" : "BR"
       }
     }
   ],

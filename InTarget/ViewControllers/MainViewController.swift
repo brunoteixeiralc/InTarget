@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import CoreData
 
 class MainViewController: UIViewController {
     
@@ -25,11 +26,14 @@ class MainViewController: UIViewController {
     var scoreRef: DatabaseReference!
     var rankListModelOrdered:RankListModel?
     var uuid = UIDevice.current.identifierForVendor?.uuidString
+    var user: NSManagedObject?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configDatabase()
         setupSlider()
+        ///local coredata
+        fetchName()
         startNewGame()
     }
     
@@ -100,12 +104,75 @@ class MainViewController: UIViewController {
         }
     }
     
+    func saveNameDatabase(name:String){
+        if let uuid = uuid {
+            self.scoreRef.child(uuid).child("name").setValue(name)
+        }
+    }
+    
     func updateImageRank(){
         for (index,rank) in rankListModelOrdered!.rankList.enumerated() {
             if (rank.uuid == uuid){
                 self.rankImage.image = UIImage(systemName: "\(index + 1).circle")
                 break
             }
+        }
+    }
+    
+    func showAlertRankName(){
+        let alert = UIAlertController(title: "🎯", message:  NSLocalizedString("Add a new name for your first ranking", comment: "Add a new name for your first ranking"),preferredStyle: .alert)
+        
+        let saveAction = UIAlertAction(title: NSLocalizedString("Save", comment: "Save"), style: .default) {
+            [unowned self] action in
+                                          
+            guard let textField = alert.textFields?.first, let nameToSave = textField.text else {
+                return
+            }
+            self.saveName(name: nameToSave)
+        }
+        
+        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: "Cancel"),style: .cancel)
+          
+        alert.addTextField()
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true)
+    }
+    
+    func saveName(name:String){
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
+            return
+        }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "User", in: managedContext)!
+        let user = NSManagedObject(entity: entity, insertInto: managedContext)
+        user.setValue(name, forKey: "name")
+        
+        do {
+            try managedContext.save()
+            self.saveNameDatabase(name: user.value(forKey: "name") as! String)
+            
+        }catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
+    func fetchName(){
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "User")
+        
+        do{
+            user = try managedContext.fetch(fetchRequest).first
+            ///KVC - Key Value Coding
+            print(user?.value(forKey: "name") as? String ?? "No name")
+            
+        }catch let error as NSError{
+            print("Could not fetch. \(error), \(error.userInfo)")
         }
     }
     
@@ -120,6 +187,9 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func startOver(){
+        if (user == nil){
+            showAlertRankName()
+        }
         saveScoreDatabase()
         startNewGame()
     }

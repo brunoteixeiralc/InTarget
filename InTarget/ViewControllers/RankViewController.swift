@@ -63,7 +63,7 @@ extension RankViewController: UITableViewDelegate,UITableViewDataSource{
         if (uuid == item.uuid){
             cell.name.text =  "\(NSLocalizedString("You!", comment: "You!")) 😀 🎯"
         }else{
-            cell.name.text = item.uuid
+            cell.name.text = item.name.isEmpty ? item.uuid : item.name
         }
         cell.score.text = String(item.score)
     }

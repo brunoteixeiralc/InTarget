@@ -25,6 +25,7 @@
 		F49E60082673FF87007DEEA8 /* InTargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49E60072673FF87007DEEA8 /* InTargetTests.swift */; };
 		F49E60132673FF87007DEEA8 /* InTargetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49E60122673FF87007DEEA8 /* InTargetUITests.swift */; };
 		F4CC2FE62683B7E300FA14C0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F4CC2FE52683B7E300FA14C0 /* FirebaseDatabase */; };
+		F4EE4663268F4E3200C7A69D /* InTarget.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4EE4661268F4E3200C7A69D /* InTarget.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		F49E60122673FF87007DEEA8 /* InTargetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InTargetUITests.swift; sourceTree = "<group>"; };
 		F49E60142673FF87007DEEA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4A5246B2683AF2100170780 /* InTarget.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = InTarget.xctestplan; sourceTree = "<group>"; };
+		F4EE4662268F4E3200C7A69D /* InTarget.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InTarget.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		F49E5FEF2673FF86007DEEA8 /* InTarget */ = {
 			isa = PBXGroup;
 			children = (
+				F4EE4661268F4E3200C7A69D /* InTarget.xcdatamodeld */,
 				F409A3082683B512009159DE /* GoogleService-Info.plist */,
 				F44DEAF12680DD0E00BC4C1E /* Localizable.strings */,
 				F49E5FF02673FF86007DEEA8 /* AppDelegate.swift */,
@@ -331,6 +334,7 @@
 				F40AD0EE2684E48E00453AF0 /* RankModel.swift in Sources */,
 				F44DEADA267FA3B300BC4C1E /* AboutViewController.swift in Sources */,
 				F40AD0F2268526F600453AF0 /* RankListModel.swift in Sources */,
+				F4EE4663268F4E3200C7A69D /* InTarget.xcdatamodeld in Sources */,
 				F49E5FF32673FF86007DEEA8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,6 +701,19 @@
 			productName = FirebaseDatabase;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		F4EE4661268F4E3200C7A69D /* InTarget.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F4EE4662268F4E3200C7A69D /* InTarget.xcdatamodel */,
+			);
+			currentVersion = F4EE4662268F4E3200C7A69D /* InTarget.xcdatamodel */;
+			path = InTarget.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F49E5FE52673FF86007DEEA8 /* Project object */;
 }
