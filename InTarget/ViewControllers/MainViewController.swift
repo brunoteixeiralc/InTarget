@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import CoreData
+import UserNotifications
 
 class MainViewController: UIViewController {
     
@@ -27,14 +28,19 @@ class MainViewController: UIViewController {
     var rankListModelOrdered:RankListModel?
     var uuid = UIDevice.current.identifierForVendor?.uuidString
     var user: NSManagedObject?
+    var userRanking:Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         configDatabase()
         setupSlider()
         ///local coredata
         fetchName()
         startNewGame()
+        
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -114,6 +120,7 @@ class MainViewController: UIViewController {
         for (index,rank) in rankListModelOrdered!.rankList.enumerated() {
             if (rank.uuid == uuid){
                 self.rankImage.image = UIImage(systemName: "\(index + 1).circle")
+                self.userRanking = index + 1
                 break
             }
         }
@@ -174,6 +181,27 @@ class MainViewController: UIViewController {
         }catch let error as NSError{
             print("Could not fetch. \(error), \(error.userInfo)")
         }
+    }
+    
+    func scheduleNotificationRanking(rank:Int){
+        let content = UNMutableNotificationContent()
+        content.title = "InTarget Rank!"
+        content.body = "Thanks for playing! You are in \(rank)\u{00BA}"
+        content.sound = UNNotificationSound.default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(
+          timeInterval: 10,
+          repeats: false)
+        let request = UNNotificationRequest(
+          identifier: "UserRankingLocalNotification",
+          content: content,
+          trigger: trigger)
+        let center = UNUserNotificationCenter.current()
+        center.add(request)
+    }
+    
+    @objc func appMovedToBackground(){
+        scheduleNotificationRanking(rank: userRanking!)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
