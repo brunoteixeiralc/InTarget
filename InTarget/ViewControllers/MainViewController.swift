@@ -39,6 +39,7 @@ class MainViewController: UIViewController {
         fetchName()
         startNewGame()
         
+        ///notification when the app goes background
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil)
     }
