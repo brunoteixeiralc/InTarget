@@ -105,14 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F40AD0EB2684D37E00453AF0 /* ViewControllers */ = {
+		F40AD0EB2684D37E00453AF0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				F49E5FF42673FF86007DEEA8 /* MainViewController.swift */,
 				F44DEAD9267FA3B300BC4C1E /* AboutViewController.swift */,
 				F40AD0E92684D37000453AF0 /* RankViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		F40AD0EC2684E46900453AF0 /* Models */ = {
@@ -176,12 +176,12 @@
 				F44DEAF12680DD0E00BC4C1E /* Localizable.strings */,
 				F49E5FF02673FF86007DEEA8 /* AppDelegate.swift */,
 				F49E5FF22673FF86007DEEA8 /* SceneDelegate.swift */,
-				F4610EF1269636450013B2C3 /* ViewModel */,
-				F4610EEE269635020013B2C3 /* Utilities */,
-				F40AD0F5268618B700453AF0 /* Cells */,
 				F40AD0EC2684E46900453AF0 /* Models */,
-				F40AD0EB2684D37E00453AF0 /* ViewControllers */,
-				F44DEADF2680D8AB00BC4C1E /* Main.storyboard */,
+				F4610EF1269636450013B2C3 /* ViewModel */,
+				F40AD0EB2684D37E00453AF0 /* Controllers */,
+				F4BE72032697AED100B740C9 /* StoryBoards */,
+				F40AD0F5268618B700453AF0 /* Cells */,
+				F4610EEE269635020013B2C3 /* Utilities */,
 				F49E5FF92673FF87007DEEA8 /* Assets.xcassets */,
 				F44DEB0026810CAA00BC4C1E /* InfoPlist.strings */,
 				F49E5FFE2673FF87007DEEA8 /* Info.plist */,
@@ -206,6 +206,14 @@
 				F49E60142673FF87007DEEA8 /* Info.plist */,
 			);
 			path = InTargetUITests;
+			sourceTree = "<group>";
+		};
+		F4BE72032697AED100B740C9 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				F44DEADF2680D8AB00BC4C1E /* Main.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
