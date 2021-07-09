@@ -27,7 +27,6 @@ class AboutViewController: UIViewController, WKUIDelegate {
     """, comment: "About the app")
         
         let tapAboutMe = UITapGestureRecognizer(target: self, action: #selector(self.aboutMeWebView(_:)))
-        aboutMeLabel.isUserInteractionEnabled = true
         aboutMeLabel.addGestureRecognizer(tapAboutMe)
     }
     

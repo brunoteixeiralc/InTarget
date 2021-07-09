@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Firebase
 import UserNotifications
 
 class MainViewController: UIViewController {
@@ -122,8 +121,6 @@ class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "goToRank"){
             if let rankVC = segue.destination as? RankViewController{
-                rankVC.rankListModel = viewModel.rankListModelOrdered
-                rankVC.scoreRef = viewModel.scoreRef
                 rankVC.uuid = viewModel.uuid
             }
         }

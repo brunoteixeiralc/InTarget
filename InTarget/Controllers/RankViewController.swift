@@ -6,36 +6,27 @@
 //
 
 import UIKit
-import Firebase
 
 class RankViewController: UIViewController {
 
     @IBOutlet var tableView:UITableView!
-    
-    var scoreRef: DatabaseReference!
-    var rankListModel:RankListModel?
+
     var uuid:String!
+    
+    private let viewModel = RankViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addScoreObserver()
+        
+        viewModel.configDatabase()
+        
+        viewModel.addScoreObserver { _ in
+            self.animateView(view: self.tableView)
+        }
     }
     
     @IBAction func close(){
         dismiss(animated: true, completion: nil)
-    }
-    
-    func addScoreObserver(){
-        scoreRef.observe(.value) { snapshot in
-            if (snapshot.exists()){
-                let rankListModel = RankListModel(snapshot: snapshot)
-                rankListModel.rankList.sort {
-                    $0.score > $1.score
-                }
-                self.rankListModel = rankListModel
-                self.animateView(view: self.tableView)
-            }
-        }
     }
     
     func animateView(view:UIView){
@@ -49,13 +40,13 @@ class RankViewController: UIViewController {
 extension RankViewController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rankListModel?.rankList.count ?? 0
+        return viewModel.rankListModel?.rankList.count ?? 0
     }
     
    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell( withIdentifier: "cellRank", for: indexPath) as! RankTableViewCell
-        configureCell(cell: cell, with: (rankListModel?.rankList[indexPath.row])!)
+        configureCell(cell: cell, with: (viewModel.rankListModel?.rankList[indexPath.row])!)
         return cell
     }
     
