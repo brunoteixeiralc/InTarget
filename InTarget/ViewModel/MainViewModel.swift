@@ -49,7 +49,6 @@ public class MainViewModel {
     func updateImageRank(){
         for (index,rank) in rankListModelOrdered!.rankList.enumerated() {
             if (rank.uuid == uuid){
-                //self.rankImage.image = UIImage(systemName: "\(index + 1).circle")
                 self.rankImagePath.value = "\(index + 1).circle"
                 self.userRanking = index + 1
                 break

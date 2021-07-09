@@ -30,10 +30,7 @@ class RankViewController: UIViewController {
     }
     
     func animateView(view:UIView){
-        UIView.transition(with: view,
-                          duration: 0.35,
-                          options: .transitionCrossDissolve,
-                          animations: { self.tableView.reloadData() })
+        UIView.transition(with: view,duration: 0.35,options: .transitionCrossDissolve,animations: { self.tableView.reloadData() })
     }
 }
 
@@ -43,7 +40,6 @@ extension RankViewController: UITableViewDelegate,UITableViewDataSource{
         return viewModel.rankListModel?.rankList.count ?? 0
     }
     
-   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell( withIdentifier: "cellRank", for: indexPath) as! RankTableViewCell
         configureCell(cell: cell, with: (viewModel.rankListModel?.rankList[indexPath.row])!)

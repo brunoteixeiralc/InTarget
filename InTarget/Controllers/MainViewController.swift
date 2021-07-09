@@ -76,31 +76,16 @@ class MainViewController: UIViewController {
     }
     
     func showAlertRankName(){
-        let alert = UIAlertController(title: "🎯", message:  NSLocalizedString("Add a new name for your first ranking", comment: "Add a new name for your first ranking"),preferredStyle: .alert)
-        
-        let saveAction = UIAlertAction(title: NSLocalizedString("Save", comment: "Save"), style: .default) {
-            [unowned self] action in
-                                          
-            guard let textField = alert.textFields?.first, let nameToSave = textField.text else {
-                return
-            }
-            viewModel.saveName(name: nameToSave)
+        AlertHelper.showAlertWithTextField(on: self, with: "🎯", message: NSLocalizedString("Add a new name for your first ranking", comment: "Add a new name for your first ranking")) { content in
+            let nameToSave = content
+            self.viewModel.saveName(name: nameToSave)
         }
-        
-        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: "Cancel"),style: .cancel)
-          
-        alert.addTextField()
-        alert.addAction(saveAction)
-        alert.addAction(cancelAction)
-        
-        present(alert, animated: true)
     }
     
-    //TODO: Translate - Localizable
     func scheduleNotificationRanking(rank:Int){
         let content = UNMutableNotificationContent()
-        content.title = "InTarget Rank!"
-        content.body = "Thanks for playing! You are in \(rank)\u{00BA}"
+        content.title = NSLocalizedString("InTarget Rank!", comment: "InTarget Rank!")
+        content.body = NSLocalizedString("Thanks for playing! You are in", comment: "Thanks for playing") + "\(rank)\u{00BA}"
         content.sound = UNNotificationSound.default
         
         let trigger = UNTimeIntervalNotificationTrigger(
@@ -115,7 +100,9 @@ class MainViewController: UIViewController {
     }
     
     @objc func appMovedToBackground(){
-        scheduleNotificationRanking(rank: viewModel.userRanking!)
+        if let uRanking = viewModel.userRanking{
+            scheduleNotificationRanking(rank:uRanking)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -138,15 +125,13 @@ class MainViewController: UIViewController {
         let result = viewModel.calculateScoreAndMessage()
         
         let message = NSLocalizedString("You scored", comment: "You scored") + " \(result.points) " + NSLocalizedString("points", comment: "points")
-        let alert = UIAlertController(title: result.title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default) {_ in
+        
+        AlertHelper.showAlert(on: self, with: result.title, message: message) {
             self.updateLabel()
             self.viewModel.startNewRound()
             self.slider.value = Float(self.viewModel.currentValue)
             self.startAnimation(self.slider)
         }
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
     }
     
     @IBAction func sliderMoved(_ slider:UISlider){

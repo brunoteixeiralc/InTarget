@@ -12,6 +12,7 @@
 		F40AD0EE2684E48E00453AF0 /* RankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40AD0ED2684E48E00453AF0 /* RankModel.swift */; };
 		F40AD0F2268526F600453AF0 /* RankListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40AD0F1268526F600453AF0 /* RankListModel.swift */; };
 		F40AD0F42686115C00453AF0 /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40AD0F32686115C00453AF0 /* RankTableViewCell.swift */; };
+		F432F9532698DA1B00B318E6 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F432F9522698DA1A00B318E6 /* AlertHelper.swift */; };
 		F44DEADA267FA3B300BC4C1E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DEAD9267FA3B300BC4C1E /* AboutViewController.swift */; };
 		F44DEADD2680D8AB00BC4C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44DEADF2680D8AB00BC4C1E /* Main.storyboard */; };
 		F44DEAEF2680DD0E00BC4C1E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F44DEAF12680DD0E00BC4C1E /* Localizable.strings */; };
@@ -54,6 +55,7 @@
 		F40AD0ED2684E48E00453AF0 /* RankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankModel.swift; sourceTree = "<group>"; };
 		F40AD0F1268526F600453AF0 /* RankListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankListModel.swift; sourceTree = "<group>"; };
 		F40AD0F32686115C00453AF0 /* RankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
+		F432F9522698DA1A00B318E6 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		F44DEAD9267FA3B300BC4C1E /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		F44DEADE2680D8AB00BC4C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F44DEAF02680DD0E00BC4C1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				F4610EEF269635370013B2C3 /* Box.swift */,
+				F432F9522698DA1A00B318E6 /* AlertHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				F49E5FF52673FF86007DEEA8 /* MainViewController.swift in Sources */,
 				F49E5FF12673FF86007DEEA8 /* AppDelegate.swift in Sources */,
 				F40AD0EE2684E48E00453AF0 /* RankModel.swift in Sources */,
+				F432F9532698DA1B00B318E6 /* AlertHelper.swift in Sources */,
 				F44DEADA267FA3B300BC4C1E /* AboutViewController.swift in Sources */,
 				F40AD0F2268526F600453AF0 /* RankListModel.swift in Sources */,
 				F4EE4663268F4E3200C7A69D /* InTarget.xcdatamodeld in Sources */,
