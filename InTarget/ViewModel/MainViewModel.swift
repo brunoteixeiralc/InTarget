@@ -11,7 +11,6 @@ import CoreData
 
 public class MainViewModel {
     
-    var ref: DatabaseReference!
     var scoreRef: DatabaseReference!
     
     var uuid = UIDevice.current.identifierForVendor?.uuidString
@@ -28,7 +27,6 @@ public class MainViewModel {
     var user: NSManagedObject?
     
     func configDatabase(){
-        ref = Database.database().reference()
         scoreRef = Database.database().reference(withPath: "target_scores")
         addScoreObserver()
     }
