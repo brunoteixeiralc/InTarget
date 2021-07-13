@@ -73,6 +73,7 @@ class MainViewController: UIViewController {
         slider.setThumbImage(thumbImageNormal, for: .normal)
         let thumbImageHighlighted = UIImage(named: "sliderThumb-Highlighted")
         slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
+        slider.value = Float(viewModel.currentValue)
     }
     
     func showAlertRankName(){

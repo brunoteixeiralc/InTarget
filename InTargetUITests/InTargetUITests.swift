@@ -20,21 +20,30 @@ class InTargetUITests: XCTestCase {
         let hitMeButton = app.buttons["hitMe_btn"]
         let startOverButton = app.buttons["startOver_btn"]
         
+        sleep(2)
+        
         accountButton.tap()
         
         aboutButton.tap()
+        
+        sleep(2)
+        
         aboutButton.tap()
         
         closeButton.tap()
         
         rankingButton.tap()
+        
         sleep(2)
+        
         closeButton.tap()
         
         hitMeButton.tap()
+        
         app.buttons["OK"].tap()
         
         startOverButton.tap()
+        
         sleep(3)
                                                 
     }

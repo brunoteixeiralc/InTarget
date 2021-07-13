@@ -19,7 +19,8 @@ public class MainViewModel {
     var userRanking:Int?
     var rankImagePath = Box("")
     
-    var currentValue = 0
+    ///Default value (50)
+    var currentValue = 50
     var target = Box(0)
     var score = Box(0)
     var round = Box(0)

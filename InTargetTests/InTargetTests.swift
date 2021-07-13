@@ -62,4 +62,40 @@ class InTargetTests: XCTestCase {
         XCTAssertNotEqual(viewModel.score.value, 0)
         XCTAssertEqual(result.title, NSLocalizedString("Perfect!", comment: "Perfect!"))
     }
+    
+    func testScorePointsAlmost() throws {
+        viewModel.currentValue = 76
+        viewModel.target.value = 80
+        let result = viewModel.calculateScoreAndMessage()
+        XCTAssertNotEqual(viewModel.score.value, 0)
+        XCTAssertEqual(result.title, NSLocalizedString("You almost had it!", comment: "You almost had it!"))
+    }
+    
+    func testScorePointsPrettyGood() throws {
+        viewModel.currentValue = 71
+        viewModel.target.value = 80
+        let result = viewModel.calculateScoreAndMessage()
+        XCTAssertNotEqual(viewModel.score.value, 0)
+        XCTAssertEqual(result.title, NSLocalizedString("Pretty good!", comment: "Pretty good!"))
+    }
+
+    func testScorePointsNotEvenClose() throws {
+        viewModel.currentValue = 60
+        viewModel.target.value = 80
+        let result = viewModel.calculateScoreAndMessage()
+        XCTAssertNotEqual(viewModel.score.value, 0)
+        XCTAssertEqual(result.title, NSLocalizedString("Not even close...", comment: "Not even close..."))
+    }
+    
+    func testScoreSaveFirebase() throws {
+        viewModel.configDatabase()
+        viewModel.score.value = 1000
+        viewModel.saveScoreDatabase()
+    }
+    
+    func testSaveNameCoreDate() throws {
+        viewModel.configDatabase()
+        viewModel.saveName(name: "Bruno")
+        viewModel.fetchName()
+    }
 }
