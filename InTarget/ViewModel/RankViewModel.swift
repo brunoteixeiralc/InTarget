@@ -15,6 +15,7 @@ public class RankViewModel{
     
     func configDatabase(){
         scoreRef = Database.database().reference(withPath: "target_scores")
+        scoreRef.keepSynced(true)
     }
     
     func addScoreObserver(completionHandler: @escaping (RankListModel) -> Void) {

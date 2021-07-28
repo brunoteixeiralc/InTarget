@@ -11,19 +11,7 @@ import CoreData
 @testable import InTarget
 
 class InTargetTests: XCTestCase {
-    
-    /*
-     what to test:
-     - database reference firebase - OK
-     - uuid is created (not empty) - OK
-     - start new game (verify score, round, currentvalue) - OK
-     - start new round (verify score, round, currentvalue) - OK
-     - score points - OK
-     - save content to firebase
-     - save name to coreData
-     - fetch name to coreData
-     */
-    
+
     let viewModel = MainViewModel()
 
     func testDatabaseRef() throws {
@@ -92,10 +80,22 @@ class InTargetTests: XCTestCase {
         viewModel.score.value = 1000
         viewModel.saveScoreDatabase()
     }
+
+    func testRoundSaveFirebase() throws {
+        viewModel.configDatabase()
+        viewModel.round.value = 20
+        viewModel.saveRoundDatabase()
+    }
     
-    func testSaveNameCoreDate() throws {
+    func testSaveNameCoreData() throws {
         viewModel.configDatabase()
         viewModel.saveName(name: "Bruno")
         viewModel.fetchName()
+    }
+
+    func testFetchNameCoreData() throws {
+        viewModel.configDatabase()
+        viewModel.fetchName()
+        XCTAssertNotEqual("Bruno", viewModel.user?.value(forKey: "name") as! String)
     }
 }

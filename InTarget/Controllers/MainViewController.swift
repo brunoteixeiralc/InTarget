@@ -119,6 +119,8 @@ class MainViewController: UIViewController {
             showAlertRankName()
         }
         viewModel.saveScoreDatabase()
+        viewModel.saveRoundDatabase()
+        viewModel.saveNameDatabase()
         viewModel.startNewGame()
     }
     

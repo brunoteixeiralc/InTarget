@@ -1,6 +1,8 @@
 # InTarget
 InTarget is using SPM, Firebase, CoreData, Localizable , Local Notification, UnitTest and UITest with Test Plan
 
+Using XCTest, iPhone 7 Plus, iOS 14.1
+
 # Run an XCTest in Firebase
 xcodebuild -project /Users/brunolemgruber/XcodeProjects/RayWenderlich_projects/InTarget/InTarget.xcodeproj \
 -scheme InTarget \

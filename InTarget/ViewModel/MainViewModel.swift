@@ -29,6 +29,7 @@ public class MainViewModel {
     
     func configDatabase(){
         scoreRef = Database.database().reference(withPath: "target_scores")
+        scoreRef.keepSynced(true)
         addScoreObserver()
     }
     
@@ -96,9 +97,15 @@ public class MainViewModel {
             self.scoreRef.child(uuid).child("score").setValue(score.value)
         }
     }
-    
-    func saveNameDatabase(name:String){
+
+    func saveRoundDatabase(){
         if let uuid = uuid {
+            self.scoreRef.child(uuid).child("round").setValue(round.value)
+        }
+    }
+    
+    func saveNameDatabase(){
+        if let uuid = uuid, let name = user?.value(forKey: "name") {
             self.scoreRef.child(uuid).child("name").setValue(name)
         }
     }
@@ -132,7 +139,7 @@ public class MainViewModel {
         
         do {
             try managedContext.save()
-            self.saveNameDatabase(name: user.value(forKey: "name") as! String)
+            self.saveNameDatabase()
             
         }catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")

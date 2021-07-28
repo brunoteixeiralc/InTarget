@@ -19,7 +19,7 @@ class RankListModel: NSObject {
     init(snapshot:DataSnapshot){
         let snapshots = snapshot.value as! [String:AnyObject]
         for (key,value) in snapshots {
-            let rank = RankModel(uuid: key, score: value["score"] as! Int, name: value["name"] as? String ?? "")
+            let rank = RankModel(uuid: key, score: value["score"] as! Int, name: value["name"] as? String ?? "", round: value["round"] as? Int ?? 0)
             rankList.append(rank)
         }
     }
