@@ -1,5 +1,8 @@
 # InTarget
-InTarget is using SPM, Firebase, CoreData, Localizable , Local Notification, UnitTest and UITest with Test Plan
+InTarget is using SPM, Cocoapods, Lottie, MessageKit, Firebase, CoreData, Localizable , Local Notification, UnitTest and UITest with Test Plan
+
+# SPM and Cocoapods
+Using both because the lib MessageKit (3.6.0), Lottie (not find de url) is not working well with SPM
 
 Using XCTest, iPhone 7 Plus, iOS 14.1
 
