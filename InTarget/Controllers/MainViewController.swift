@@ -17,10 +17,18 @@ class MainViewController: UIViewController {
     @IBOutlet var rankImage: UIImageView!
     
     private let viewModel = MainViewModel()
+
+    override func viewWillAppear(_ animated: Bool) {
+        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.landscape, andRotateTo: UIInterfaceOrientation.landscapeLeft)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.all)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupSlider()
         
         viewModel.target.bind { [weak self] targetValue in
@@ -48,7 +56,7 @@ class MainViewController: UIViewController {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil)
     }
-    
+
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(true)
         viewModel.scoreRef.removeAllObservers()

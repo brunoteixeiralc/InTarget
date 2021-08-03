@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; configuration.title = "Get Started"; ObjectID = "6Yq-In-a3A"; */
+"6Yq-In-a3A.configuration.title" = "Vamos começar";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6Yq-In-a3A"; */
+"6Yq-In-a3A.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Ex. Bruno Corrêa"; ObjectID = "Eu7-s4-SgX"; */
+"Eu7-s4-SgX.placeholder" = "Ex. Bruno Corrêa";
+
+/* Class = "UILabel"; text = "Choose your display name:"; ObjectID = "pVE-k8-fHO"; */
+"pVE-k8-fHO.text" = "Digite seu nome no jogo:";

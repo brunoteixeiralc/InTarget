@@ -11,6 +11,7 @@ class RankTableViewCell: UITableViewCell {
 
     @IBOutlet var name:UILabel!
     @IBOutlet var score:UILabel!
+    @IBOutlet var chat:UIButton!
     //@IBOutlet var image:UIImageView!
     
 }
