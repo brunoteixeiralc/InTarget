@@ -16,6 +16,8 @@
 		F40AD0F2268526F600453AF0 /* RankListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40AD0F1268526F600453AF0 /* RankListModel.swift */; };
 		F40AD0F42686115C00453AF0 /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40AD0F32686115C00453AF0 /* RankTableViewCell.swift */; };
 		F432F9532698DA1B00B318E6 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F432F9522698DA1A00B318E6 /* AlertHelper.swift */; };
+		F43833D026BC049A00C8CC43 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43833CF26BC049A00C8CC43 /* LoginViewModel.swift */; };
+		F43833D326BC08EC00C8CC43 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43833D226BC08EC00C8CC43 /* Storyboardable.swift */; };
 		F44DEADA267FA3B300BC4C1E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DEAD9267FA3B300BC4C1E /* AboutViewController.swift */; };
 		F44DEADD2680D8AB00BC4C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44DEADF2680D8AB00BC4C1E /* Main.storyboard */; };
 		F44DEAEF2680DD0E00BC4C1E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F44DEAF12680DD0E00BC4C1E /* Localizable.strings */; };
@@ -83,6 +85,8 @@
 		F40AD0F1268526F600453AF0 /* RankListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankListModel.swift; sourceTree = "<group>"; };
 		F40AD0F32686115C00453AF0 /* RankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
 		F432F9522698DA1A00B318E6 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		F43833CF26BC049A00C8CC43 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F43833D226BC08EC00C8CC43 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 		F44DEAD9267FA3B300BC4C1E /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		F44DEADE2680D8AB00BC4C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F44DEAF02680DD0E00BC4C1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -209,6 +213,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		F43833D126BC08CC00C8CC43 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F43833D226BC08EC00C8CC43 /* Storyboardable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		F4610EEE269635020013B2C3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +235,7 @@
 			children = (
 				F4610EF2269636680013B2C3 /* MainViewModel.swift */,
 				F4BE72042697AF5300B740C9 /* RankViewModel.swift */,
+				F43833CF26BC049A00C8CC43 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -313,6 +326,7 @@
 		F4BE72032697AED100B740C9 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				F43833D126BC08CC00C8CC43 /* Protocol */,
 				F49E571A26B2D58900577A82 /* Launch Screen.storyboard */,
 				F4D05D9E26B9679500240198 /* Login.storyboard */,
 				F44DEADF2680D8AB00BC4C1E /* Main.storyboard */,
@@ -583,11 +597,13 @@
 				F40AD0EA2684D37100453AF0 /* RankViewController.swift in Sources */,
 				F40AD0F42686115C00453AF0 /* RankTableViewCell.swift in Sources */,
 				F49E5FF52673FF86007DEEA8 /* MainViewController.swift in Sources */,
+				F43833D326BC08EC00C8CC43 /* Storyboardable.swift in Sources */,
 				F49E5FF12673FF86007DEEA8 /* AppDelegate.swift in Sources */,
 				F40AD0EE2684E48E00453AF0 /* RankModel.swift in Sources */,
 				F432F9532698DA1B00B318E6 /* AlertHelper.swift in Sources */,
 				F44DEADA267FA3B300BC4C1E /* AboutViewController.swift in Sources */,
 				F40AD0F2268526F600453AF0 /* RankListModel.swift in Sources */,
+				F43833D026BC049A00C8CC43 /* LoginViewModel.swift in Sources */,
 				F4EE4663268F4E3200C7A69D /* InTarget.xcdatamodeld in Sources */,
 				F49E5FF32673FF86007DEEA8 /* SceneDelegate.swift in Sources */,
 				F49E570026B1B1F000577A82 /* ChatViewController.swift in Sources */,
