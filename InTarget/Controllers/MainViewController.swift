@@ -7,14 +7,16 @@
 
 import UIKit
 import UserNotifications
+import FirebaseAuth
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController,Storyboardable {
     
     @IBOutlet var slider: UISlider!
     @IBOutlet var targetLabel: UILabel!
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var roundLabel: UILabel!
     @IBOutlet var rankImage: UIImageView!
+    @IBOutlet var signOutBtn: UIButton!
     
     private let viewModel = MainViewModel()
 
@@ -117,7 +119,7 @@ class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "goToRank"){
             if let rankVC = segue.destination as? RankViewController{
-                rankVC.uuid = viewModel.uuid
+                rankVC.uuid = viewModel.uuid.value
             }
         }
     }
@@ -147,6 +149,11 @@ class MainViewController: UIViewController {
     
     @IBAction func sliderMoved(_ slider:UISlider){
         viewModel.currentValue = lroundf(slider.value)
+    }
+
+    @IBAction func signout(){
+        do { try Auth.auth().signOut() }
+        catch { print("already logged out") }
     }
 }
 

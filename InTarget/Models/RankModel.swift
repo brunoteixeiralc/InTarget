@@ -29,11 +29,4 @@ class RankModel: NSObject {
         name = (snapshotValue["name"] as! String)
         round = (snapshotValue["round"] as! Int)
     }
-    
-//    func toAnyObject() -> Any{
-//        return [
-//            "score":score,
-//            "name":name
-//        ]
-//    }
 }

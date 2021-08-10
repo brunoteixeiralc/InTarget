@@ -13,7 +13,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="mainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="InTarget" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="InTarget" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,6 +184,21 @@
                                     <constraint firstAttribute="width" constant="19" id="oZo-a8-t2k"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z66-00-6k7">
+                                <rect key="frame" x="60" y="18" width="57" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="startOver_btn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Aik-XE-h37"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Sign out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signout" destination="BYZ-38-t0r" eventType="touchUpInside" id="rIG-hG-1oV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -204,7 +219,9 @@
                             <constraint firstItem="cOA-8R-JnV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eTx-0h-kHJ"/>
                             <constraint firstItem="mLW-LZ-fod" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fHN-ec-W87"/>
                             <constraint firstItem="T5n-pW-TEf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="kAE-qI-6DK"/>
+                            <constraint firstItem="z66-00-6k7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mLk-8O-wOO"/>
                             <constraint firstItem="deC-qM-6dZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="n2e-Yi-Hwh"/>
+                            <constraint firstItem="z66-00-6k7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="nQ4-eh-YJI"/>
                             <constraint firstItem="T5n-pW-TEf" firstAttribute="leading" secondItem="deC-qM-6dZ" secondAttribute="trailing" constant="-7" id="pGk-DU-cyN"/>
                             <constraint firstItem="1Ye-D6-tOh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rMA-mY-bHp"/>
                             <constraint firstAttribute="bottom" secondItem="cOA-8R-JnV" secondAttribute="bottom" id="vJR-CZ-xEC"/>
@@ -214,13 +231,14 @@
                         <outlet property="rankImage" destination="deC-qM-6dZ" id="k38-wy-27z"/>
                         <outlet property="roundLabel" destination="j4G-go-Xym" id="U6B-wS-sfP"/>
                         <outlet property="scoreLabel" destination="vaC-VF-4Qj" id="dFc-EN-QmG"/>
+                        <outlet property="signOutBtn" destination="z66-00-6k7" id="rBO-Ax-8kf"/>
                         <outlet property="slider" destination="yiS-O5-TRr" id="rQf-8d-2be"/>
                         <outlet property="targetLabel" destination="GrV-r8-IC3" id="9yo-kK-MuA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="262.21889055472263" y="119.2"/>
+            <point key="canvasLocation" x="261.57635467980299" y="119.2"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="vlj-Nb-3HZ">

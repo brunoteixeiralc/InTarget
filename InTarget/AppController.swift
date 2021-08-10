@@ -40,11 +40,12 @@ final class AppController {
 
   // MARK: - Notifications
   @objc private func handleAppState() {
-    if let _ = Auth.auth().currentUser {
-      let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainViewController") as! MainViewController
+
+      if let _ = Auth.auth().currentUser {
+      let mainViewController = MainViewController.instantiate()
       rootViewController = mainViewController
     } else {
-      let loginViewController = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "loginViewController") as! LoginViewController
+      let loginViewController = LoginViewController.instantiate(storyboardName: "Login")
       rootViewController = loginViewController
     }
   }

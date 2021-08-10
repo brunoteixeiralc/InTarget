@@ -10,33 +10,27 @@ import Lottie
 import Foundation
 import FirebaseAuth
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, Storyboardable {
 
     @IBOutlet var animationView: AnimationView!
     @IBOutlet private var bottomConstraint: NSLayoutConstraint!
     @IBOutlet private var displayNameField: UITextField!
 
+    private let viewModel = LoginViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        animationView.contentMode = .scaleAspectFit
-        animationView.loopMode = .loop
-        animationView.animationSpeed = 0.5
-        animationView.play()
-
-        displayNameField.addTarget(
-          self,
-          action: #selector(textFieldDidReturn),
-          for: .primaryActionTriggered)
-
+        displayNameField.addTarget(self, action: #selector(textFieldDidReturn), for: .primaryActionTriggered)
+        startLottie()
         registerForKeyboardNotifications()
     }
 
     @objc private func textFieldDidReturn() {
-      signIn()
+        signInAnonymous()
     }
 
     @IBAction private func actionButtonPressed() {
-      signIn()
+        signInAnonymous()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -45,6 +39,23 @@ class LoginViewController: UIViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.all)
+    }
+
+    private func startLottie(){
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop
+        animationView.animationSpeed = 0.5
+        animationView.play()
+    }
+
+    private func signInAnonymous(){
+        guard let name = displayNameField.text, !name.isEmpty
+        else {
+            AlertHelper.showAlert(on: self, with: "Display Name Required", message: "Please enter a display name.") {}
+          return
+        }
+        displayNameField.resignFirstResponder()
+        viewModel.signIn(name: name)
     }
 
 
@@ -61,24 +72,6 @@ class LoginViewController: UIViewController {
         selector: #selector(keyboardWillHide(_:)),
         name: UIResponder.keyboardWillHideNotification,
         object: nil)
-    }
-
-    private func signIn() {
-      guard
-        let name = displayNameField.text,
-        !name.isEmpty
-      else {
-          AlertHelper.showAlert(on: self, with: "Display Name Required", message: "Please enter a display name.") {}
-        return
-      }
-      displayNameField.resignFirstResponder()
-
-      //AppSettings.displayName = name
-      Auth.auth().signInAnonymously()
-
-      let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-      let mainViewController = storyBoard.instantiateViewController(withIdentifier: "mainViewController") as! MainViewController
-      self.present(mainViewController, animated: true, completion: nil)
     }
 
     // MARK: - Notifications
@@ -122,5 +115,5 @@ class LoginViewController: UIViewController {
         self.view.layoutIfNeeded()
       }
     }
-
 }
+

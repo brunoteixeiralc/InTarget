@@ -13,18 +13,18 @@ public class MainViewModel {
     
     var scoreRef: DatabaseReference!
     
-    var uuid = UIDevice.current.identifierForVendor?.uuidString
-    
     var rankListModelOrdered:RankListModel?
     var userRanking:Int?
-    var rankImagePath = Box("")
-    
+
     ///Default value (50)
     var currentValue = 50
     var target = Box(0)
     var score = Box(0)
     var round = Box(0)
-    
+    var uuid = Box("")
+    var name = Box("")
+    var rankImagePath = Box("")
+
     var user: NSManagedObject?
     
     func configDatabase(){
@@ -48,7 +48,7 @@ public class MainViewModel {
     
     func updateImageRank(){
         for (index,rank) in rankListModelOrdered!.rankList.enumerated() {
-            if (rank.uuid == uuid){
+            if (rank.uuid == uuid.value){
                 self.rankImagePath.value = "\(index + 1).circle"
                 self.userRanking = index + 1
                 break
@@ -93,21 +93,15 @@ public class MainViewModel {
     }
     
     func saveScoreDatabase(){
-        if let uuid = uuid {
-            self.scoreRef.child(uuid).child("score").setValue(score.value)
-        }
+        self.scoreRef.child(uuid.value).child("score").setValue(score.value)
     }
 
     func saveRoundDatabase(){
-        if let uuid = uuid {
-            self.scoreRef.child(uuid).child("round").setValue(round.value)
-        }
+        self.scoreRef.child(uuid.value).child("round").setValue(round.value)
     }
     
     func saveNameDatabase(){
-        if let uuid = uuid, let name = user?.value(forKey: "name") {
-            self.scoreRef.child(uuid).child("name").setValue(name)
-        }
+        self.scoreRef.child(uuid.value).child("name").setValue(name.value)
     }
     
     func fetchName(){
